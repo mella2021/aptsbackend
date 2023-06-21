@@ -1,5 +1,6 @@
 package com.mella.Amusementpark.model;
 
+<<<<<<< HEAD
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,10 +9,16 @@ import lombok.Data;
 
 @AllArgsConstructor
 @Data
+=======
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+>>>>>>> e018898cbb62a488c6f0aea28af0e128378c84a7
 @Entity
 @Table (name="Customer")
 public class Customer {
     @Id
+<<<<<<< HEAD
     @GeneratedValue (strategy = GenerationType.AUTO)
     private int id;
 
@@ -23,19 +30,30 @@ public class Customer {
     @Column(name="phone")
     private String phone;
     @Column(name="password")
+=======
+    @
+    private String username;
+    private String email;
+    private String phone;
+>>>>>>> e018898cbb62a488c6f0aea28af0e128378c84a7
     private String password;
 
     public Customer() {
 
     }
 
+<<<<<<< HEAD
     public Customer(String username,String email, String phone, String password) {
         this.username= username;
+=======
+    public Customer(String email, String phone, String password) {
+>>>>>>> e018898cbb62a488c6f0aea28af0e128378c84a7
         this.email = email;
         this.phone = phone;
         this.password = password;
     }
 
+<<<<<<< HEAD
     public int getId() {
         return id;
     }
@@ -44,6 +62,8 @@ public class Customer {
         this.id = id;
     }
 
+=======
+>>>>>>> e018898cbb62a488c6f0aea28af0e128378c84a7
     public String getUsername() {
         return username;
     }
@@ -75,4 +95,8 @@ public class Customer {
     public void setPassword(String password) {
         this.password = password;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e018898cbb62a488c6f0aea28af0e128378c84a7
